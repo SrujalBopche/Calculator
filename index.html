@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="move.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Mono:wght@600&family=Ubuntu&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>The Basic Calculator</h1>
+
+    <div class="container">
+        <div class="cal">
+            <div class="row">
+                <input type="text" id="txt">
+            </div>
+            <div class="row">
+                <input type="button" value="C" class="buttons" onclick="Clear()">
+                <input type="button" value="←" class="buttons" onclick="backspace('←')">
+                <input type="button" value="%" class="buttons" onclick="solve('%')">
+                <input type="button" value="/" class="buttons" onclick="solve('/')">
+
+            </div>
+
+            <div class="row">
+                <input type="button" value="7" class="buttons" onclick="solve('7')">
+                <input type="button" value="8" class="buttons" onclick="solve('8')">
+                <input type="button" value="9" class="buttons" onclick="solve('9')">
+                <input type="button" value="x" class="buttons" onclick="solve('*')">
+
+            </div>
+
+            <div class="row">
+                <input type="button" value="4" class="buttons" onclick="solve('4')">
+                <input type="button" value="5" class="buttons" onclick="solve('5')">
+                <input type="button" value="6" class="buttons" onclick="solve('6')">
+                <input type="button" value="+" class="buttons" onclick="solve('+')">
+
+            </div>
+
+            <div class="row">
+                <input type="button" value="1" class="buttons" onclick="solve('1')">
+                <input type="button" value="2" class="buttons" onclick="solve('2')">
+                <input type="button" value="3" class="buttons" onclick="solve('3')">
+                <input type="button" value="-" class="buttons" onclick="solve('-')">
+
+            </div>
+
+            <div class="row">
+                <input type="button" value="0" class="buttons" onclick="solve('0')">
+                <input type="button" value="00" class="buttons" onclick="solve('00')">
+                <input type="button" value="." class="buttons" onclick="solve('.')">
+                <input type="button" value="=" class="buttons" onclick="result()">
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
